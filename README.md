@@ -1,2 +1,3 @@
 # IMPOTS
-gui : gtk
+GUI : gtk#
+Visual Studio for Mac
