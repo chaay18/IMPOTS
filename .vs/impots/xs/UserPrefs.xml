@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{11098DF5-699C-4535-83D5-660F354B9757}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="impots/Program.cs">
+    <Files>
+      <File FileName="impots/Program.cs" Line="15" Column="6" />
+      <File FileName="impots/MainWindow.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="impots" expanded="True">
+            <Node name="impots" expanded="True">
+              <Node name="UserInterface" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.impots PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

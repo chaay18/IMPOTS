@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/impots.exe" internal="true" />
+    <widget-library name="../../packages/Xamarin.Forms.Platform.GTK.5.0.0.2337/lib/net45/webkit-sharp.dll" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="516 430">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed_impots">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="label_enfants">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">nombre d'enfants</property>
+          </widget>
+          <packing>
+            <property name="X">68</property>
+            <property name="Y">69</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label_salaire">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Salaire Annuel</property>
+          </widget>
+          <packing>
+            <property name="X">68</property>
+            <property name="Y">115</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label_marie">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Est-vous marié ?</property>
+          </widget>
+          <packing>
+            <property name="X">68</property>
+            <property name="Y">17</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="radiobutton_oui">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">OUI</property>
+            <property name="Active">True</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">245</property>
+            <property name="Y">10</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.RadioButton" id="radiobutton_non">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">NON</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="X">397</property>
+            <property name="Y">10</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.SpinButton" id="nbr_enfants">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Upper">100</property>
+            <property name="PageIncrement">10</property>
+            <property name="StepIncrement">1</property>
+            <property name="ClimbRate">1</property>
+            <property name="Numeric">True</property>
+          </widget>
+          <packing>
+            <property name="X">247</property>
+            <property name="Y">64</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="SalaireAnnuel">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">247</property>
+            <property name="Y">109</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button_CALC">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">CALCULER</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="calculer" />
+          </widget>
+          <packing>
+            <property name="X">33</property>
+            <property name="Y">190</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button_EFFACER">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">EFFACER</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="effacer" />
+          </widget>
+          <packing>
+            <property name="X">223</property>
+            <property name="Y">190</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button_QUITTER">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">QUITTER</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonQUITTERClicked" />
+          </widget>
+          <packing>
+            <property name="X">416</property>
+            <property name="Y">190</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="RevenueImpo">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">False</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">226</property>
+            <property name="Y">300</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="NombreParts">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">False</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">226</property>
+            <property name="Y">260</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="SalaireAnnu">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">False</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">226</property>
+            <property name="Y">340</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label6">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombre de Parts</property>
+          </widget>
+          <packing>
+            <property name="X">100</property>
+            <property name="Y">267</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Revenu Imposable</property>
+          </widget>
+          <packing>
+            <property name="X">100</property>
+            <property name="Y">305</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Salaire Annuel</property>
+          </widget>
+          <packing>
+            <property name="X">100</property>
+            <property name="Y">347</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label4">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Impots à payer </property>
+          </widget>
+          <packing>
+            <property name="X">100</property>
+            <property name="Y">387</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="Impot_pay">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">False</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">226</property>
+            <property name="Y">380</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
